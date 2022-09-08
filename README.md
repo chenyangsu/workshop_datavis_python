@@ -23,27 +23,38 @@ We will cover the following:
 
 1. Install the Anaconda distribution available [here](https://www.anaconda.com/products/distribution). This comes with Python 3, JupyterLab and the Python packages *numpy* and *pandas*, which we will require for the workshop.
 
-2. Install Python packages for *plotly* and *dash* by entering the following commands into your Terminal (Mac) or Command Prompt (PC):
+1. Create environment
+   ```
+   conda create -n datavis python
+   conda activate datavis  # activate environment
+   conda install numpy 
+   conda install pandas
+   conda install nb_conda_kernels  # enables selection of environment to use in Jupyter notebook
+   ```
+
+1. Install Python packages for *plotly* and *dash* by entering the following commands into your Terminal (Mac) or Command Prompt (PC):
 
    ```bash
    conda install plotly
    conda install -c conda-forge dash
    conda install -c conda-forge -c plotly jupyter-dash
 
-3. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if not already on your computer.
+1. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if not already on your computer.
 
-4. Make a [Github](https://github.com/) account if you don't already have one.
+1. Make a [Github](https://github.com/) account if you don't already have one.
 
-5. Go to the workshop [repository](https://github.com/ThomasMBury/workshop_datavis_python), and create a *fork* (button on top right). This creates your own version of the repository, in which you can make edits and complete the workshop notebooks.
+1. Go to the workshop [repository](https://github.com/ThomasMBury/workshop_datavis_python), and create a *fork* (button on top right). This creates your own version of the repository, in which you can make edits and complete the workshop notebooks.
 
-6. *Clone* your repository to your computer. To do this, click the green button that says 'Code', and copy the link that appears in the box. Then go to your Terminal (or Command Prompt), navigate to a folder where you would like to store the repository and enter
+1. *Clone* your repository to your computer. To do this, click the green button that says 'Code', and copy the link that appears in the box. Then go to your Terminal (or Command Prompt), navigate to a folder where you would like to store the repository and enter
 
    ```
    git clone paste-your-link-here
    ```
    where you paste your link as indicated. You should now see the directory *workshop_datavis_python* saved on your computer.
 
-7. Open the Anaconda Navigator and launch JupyterLab. Navigate to where you saved the workshop repository and open *test.ipynb*. Check that you can run this notebook without any errors.
+1. Open the Anaconda Navigator and launch JupyterLab. Navigate to where you saved the workshop repository and open *test.ipynb*. Check that you can run this notebook without any errors.
+
+1. When open jupyter notebook, go to header, select `Kernel` --> `Change kernel` --> `Python [conda env:datavis]` to use environment you created.
 
 If you run into issues, please contact me at thomas.bury@mcgill.ca and I'll glady help out.
 
