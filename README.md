@@ -29,6 +29,7 @@ We will cover the following:
    conda activate datavis  # activate environment
    conda install numpy 
    conda install pandas
+   conda install scipy
    conda install nb_conda_kernels  # enables selection of environment to use in Jupyter notebook
    ```
 
