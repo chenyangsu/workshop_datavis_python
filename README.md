@@ -55,7 +55,7 @@ We will cover the following:
 
 1. Open the Anaconda Navigator and launch JupyterLab. Navigate to where you saved the workshop repository and open *test.ipynb*. Check that you can run this notebook without any errors.
 
-1. When open jupyter notebook, go to header, select `Kernel` --> `Change kernel` --> `Python [conda env:datavis]` to use environment you created.
+1. When you open the jupyter notebook, go to header, select `Kernel` --> `Change kernel` --> `Python [conda env:datavis]` to use environment you created.
 
 If you run into issues, please contact me at thomas.bury@mcgill.ca and I'll glady help out.
 
